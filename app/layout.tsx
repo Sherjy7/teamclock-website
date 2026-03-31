@@ -1,6 +1,8 @@
 import type { Metadata } from "next";
 import { Syne, Plus_Jakarta_Sans } from "next/font/google";
 import "./globals.css";
+import { Nav } from "@/components/nav";
+import { Footer } from "@/components/footer";
 
 const syne = Syne({
   subsets: ["latin"],
@@ -31,7 +33,11 @@ export default function RootLayout({
       lang="en"
       className={`${syne.variable} ${plusJakartaSans.variable} antialiased`}
     >
-      <body>{children}</body>
+      <body>
+        <Nav />
+        <main>{children}</main>
+        <Footer />
+      </body>
     </html>
   );
 }

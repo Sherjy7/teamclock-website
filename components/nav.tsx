@@ -87,6 +87,19 @@ export function Nav() {
             Features
           </a>
           <Link
+            href="/preview"
+            className="text-sm font-medium transition-colors"
+            style={{ color: "var(--tc-text-secondary)" }}
+            onMouseEnter={(e) =>
+              (e.currentTarget.style.color = "var(--tc-text-primary)")
+            }
+            onMouseLeave={(e) =>
+              (e.currentTarget.style.color = "var(--tc-text-secondary)")
+            }
+          >
+            Preview
+          </Link>
+          <Link
             href="/about"
             className="text-sm font-medium transition-colors"
             style={{ color: "var(--tc-text-secondary)" }}

@@ -103,6 +103,14 @@ export function MobileNav() {
                   Features
                 </a>
                 <Link
+                  href="/preview"
+                  onClick={() => setOpen(false)}
+                  className="text-base font-medium py-2"
+                  style={{ color: "var(--tc-text-primary)" }}
+                >
+                  Preview
+                </Link>
+                <Link
                   href="/about"
                   onClick={() => setOpen(false)}
                   className="text-base font-medium py-2"

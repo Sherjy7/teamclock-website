@@ -1,26 +1,59 @@
 @import "tailwindcss";
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  /* Core palette */
+  --tc-bg: #f0f4f8;
+  --tc-bg-alt: #e8eef4;
+  --tc-surface: rgba(255, 255, 255, 0.72);
+  --tc-surface-solid: #ffffff;
+  --tc-border: rgba(0, 0, 0, 0.06);
+  --tc-glass-border: rgba(255, 255, 255, 0.45);
+
+  /* Text hierarchy */
+  --tc-text-primary: #0f172a;
+  --tc-text-secondary: #475569;
+  --tc-text-muted: #94a3b8;
+
+  /* Accent — sky blue */
+  --tc-accent: #3b82f6;
+  --tc-accent-hover: #2563eb;
+  --tc-accent-light: rgba(59, 130, 246, 0.08);
+  --tc-accent-border: rgba(59, 130, 246, 0.2);
+  --tc-accent-glow: rgba(59, 130, 246, 0.12);
+
+  /* Semantic */
+  --tc-success: #10b981;
+  --tc-success-light: rgba(16, 185, 129, 0.08);
+
+  /* Dark (footer, sidebar) */
+  --tc-dark: #0f172a;
+  --tc-dark-text: #94a3b8;
+  --tc-dark-text-bright: #f1f5f9;
+
+  /* Shadows */
+  --tc-shadow-sm: 0 1px 3px rgba(0, 0, 0, 0.04), 0 2px 8px rgba(0, 0, 0, 0.03);
+  --tc-shadow-md: 0 2px 4px rgba(0, 0, 0, 0.03), 0 4px 16px rgba(0, 0, 0, 0.05);
+  --tc-shadow-lg: 0 4px 6px rgba(0, 0, 0, 0.02), 0 12px 32px rgba(0, 0, 0, 0.08);
+  --tc-shadow-xl: 0 8px 16px rgba(0, 0, 0, 0.04), 0 24px 48px rgba(0, 0, 0, 0.1);
 }
 
 @theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+  --color-background: var(--tc-bg);
+  --color-foreground: var(--tc-text-primary);
+  --font-sans: var(--font-plus-jakarta-sans);
+  --font-heading: var(--font-syne);
 }
 
 body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  background: var(--tc-bg);
+  color: var(--tc-text-primary);
+  font-family: var(--font-plus-jakarta-sans), system-ui, -apple-system, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+h1, h2, h3 {
+  font-family: var(--font-syne), var(--font-plus-jakarta-sans), system-ui, sans-serif;
+  letter-spacing: -0.02em;
+  font-weight: 700;
 }

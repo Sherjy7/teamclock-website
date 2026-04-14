@@ -22,7 +22,7 @@ export function FinalCta() {
           </p>
           <div className="flex flex-wrap justify-center gap-3">
             <a
-              href={`${APP_URL}/signup`}
+              href={`${APP_URL}/onboarding`}
               className="inline-flex items-center px-6 py-3 rounded-xl text-sm font-semibold transition-all"
               style={{ background: "white", color: "var(--tc-accent)", boxShadow: "0 4px 12px rgba(0, 0, 0, 0.15)" }}
             >

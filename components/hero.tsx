@@ -83,7 +83,7 @@ export function Hero() {
             className="flex flex-wrap gap-3 mb-4"
           >
             <a
-              href={`${APP_URL}/signup`}
+              href={`${APP_URL}/onboarding`}
               className="inline-flex items-center px-6 py-3 rounded-xl text-sm font-semibold text-white transition-all"
               style={{
                 background:

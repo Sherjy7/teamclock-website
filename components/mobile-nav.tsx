@@ -134,7 +134,7 @@ export function MobileNav() {
                   Log In
                 </a>
                 <a
-                  href={`${APP_URL}/signup`}
+                  href={`${APP_URL}/onboarding`}
                   className="text-center text-sm font-semibold px-4 py-2.5 rounded-lg text-white"
                   style={{
                     background:

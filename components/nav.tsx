@@ -136,7 +136,7 @@ export function Nav() {
             Log In
           </a>
           <a
-            href={`${APP_URL}/signup`}
+            href={`${APP_URL}/onboarding`}
             className="text-sm font-semibold px-4 py-2 rounded-lg text-white transition-all"
             style={{
               background:

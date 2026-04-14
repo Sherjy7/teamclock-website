@@ -53,7 +53,7 @@ export function SceneCta() {
           className="flex flex-wrap justify-center gap-4"
         >
           <a
-            href={`${APP_URL}/signup`}
+            href={`${APP_URL}/onboarding`}
             className="inline-flex items-center px-8 py-3.5 rounded-xl text-sm font-semibold transition-all"
             style={{
               background: "white",

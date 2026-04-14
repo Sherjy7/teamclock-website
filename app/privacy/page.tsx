@@ -10,7 +10,7 @@ export default function PrivacyPage() {
     <div className="pt-24 pb-20">
       <article className="max-w-[720px] mx-auto px-6 prose-sm" style={{ color: "var(--tc-text-secondary)" }}>
         <h1 className="text-3xl mb-2" style={{ color: "var(--tc-text-primary)" }}>Privacy Policy</h1>
-        <p className="text-sm mb-8" style={{ color: "var(--tc-text-muted)" }}>Last updated: March 30, 2026</p>
+        <p className="text-sm mb-8" style={{ color: "var(--tc-text-muted)" }}>Last updated: April 14, 2026</p>
 
         <p className="mb-6 leading-relaxed">TeamClock (&quot;we,&quot; &quot;our,&quot; or &quot;us&quot;) is committed to protecting your privacy. This Privacy Policy explains how we collect, use, and share information when you use our web application and mobile application (collectively, the &quot;Service&quot;).</p>
 
@@ -18,7 +18,8 @@ export default function PrivacyPage() {
         <p className="mb-3 leading-relaxed"><strong>Account Information:</strong> When you create an account, we collect your name, email address, and password. Organization administrators may also provide business name and team member details.</p>
         <p className="mb-3 leading-relaxed"><strong>Location Data:</strong> With your permission, we collect GPS coordinates when you clock in or out. This is used for geofence verification to confirm you are at your assigned work location.</p>
         <p className="mb-3 leading-relaxed"><strong>Usage Data:</strong> We collect information about how you use the Service, including pages visited, features used, shifts created, and time entries recorded.</p>
-        <p className="mb-6 leading-relaxed"><strong>Device Information:</strong> We collect device type, operating system, browser type, and push notification tokens for delivering notifications.</p>
+        <p className="mb-3 leading-relaxed"><strong>Device Information:</strong> We collect device type, operating system, browser type, and push notification tokens for delivering notifications.</p>
+        <p className="mb-6 leading-relaxed"><strong>Diagnostics:</strong> We automatically collect crash logs and performance data (such as app launch time) to identify and fix bugs and improve the app experience. This data is not linked to your identity.</p>
 
         <h2 className="text-xl mt-8 mb-3" style={{ color: "var(--tc-text-primary)" }}>2. How We Use Your Information</h2>
         <ul className="list-disc pl-5 space-y-2 mb-6">
